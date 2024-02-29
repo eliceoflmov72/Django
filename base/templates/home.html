@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="container py-5">
+    <section class="card card-body">
+        {% if user.is_authenticated %}
+        <h1 class="display-1 text-center">¡Bienvenido a la clase de Django con despliegue en Render!</h1>
+        <p>
+            ¡Bienvenido de nuevo a esta emocionante travesía por el mundo de Django! Estamos emocionados de continuar
+            explorando los aspectos más avanzados y emocionantes de este marco web poderoso. Recuerda que estamos aquí
+            para apoyarte en cada paso del camino mientras te sumerges en nuevas experiencias y desafíos. ¡Sigamos
+            adelante y aprovechemos al máximo esta experiencia de aprendizaje!
+        </p>
+        {% else %}
+        <h1 class="display-1 text-center">¡Bienvenido a la clase de Django con despliegue en Render!</h1>
+        <p>
+
+            ¡Bienvenido a bordo de este emocionante viaje exploratorio por el fascinante mundo de Django! Durante este
+            curso, nos sumergiremos en los fundamentos esenciales, desde la creación de modelos y vistas hasta la
+            implementación de funcionalidades avanzadas. Pero nuestro viaje no se detiene ahí; vamos más allá,
+            adentrándonos en el emocionante dominio del despliegue.
+
+            Estamos emocionados de tenerte a bordo mientras exploramos cómo llevar tu aplicación Django al siguiente
+            nivel, haciéndola accesible para el mundo entero. Utilizaremos la plataforma Render, que nos proporcionará
+            las herramientas necesarias para que tu aplicación brille en la web.
+
+            Prepárate para un viaje lleno de descubrimientos, desafíos emocionantes y logros gratificantes. Estamos aquí
+            para apoyarte en cada paso del camino y asegurarnos de que tengas una experiencia de aprendizaje única y
+            enriquecedora. ¡Vamos a comenzar esta emocionante travesía juntos!
+        </p>
+        <div class="text-center">
+            <a class="btn btn-primary" href="/loginin">Iniciar sesión</a>
+            <a class="btn btn-secondary" href="/loginup">Registro</a>
+        </div>
+        {% endif %}
+    </section>
+</main>
+{% endblock %}
